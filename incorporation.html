@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>법인설립</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" title="파비콘">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Orbit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        object{
+            margin: 0 auto;
+            width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <object data="header.html"></object>
+        <div id="fixed">
+            <h2>고객센터<br>Customer Center</h2>
+            <p>TEL. 02-523-4245</p>
+            <p>FAX. 02-586-4245</p>
+            <hr>
+            <div>
+                <a href="#"><img src="images/letter.png" alt="mail"><p>온라인 상담</p></a>
+            </div>
+        </div>
+        <div id="law">
+            <h2>설립방법</h2>
+            <hr>
+            <p>- 회사설립시에 발행하는 주식의 총수를 발기인이 모두 인수하여 회사를 설립하는 발기설립<br>
+                - 회사설립시에 발행하는 주식의 총수 중에서 발기인은 일부만 인수하고 잔여 부분에 대해서는 주주를 모집하는 모집설립의 방법이 있다.<br>
+                종래에는 대부분의 주식회사의 설립이 실질적으로 발기설립임에도 불구하고 법원이 선임한 검사인의 검사와 이로 인한 회사설립의 지연을 피하기 위하여 복잡한 모집설립의 형식을 택하고 있었다.
+            </p>
+        </div>
+        <footer> <!-- 푸터 -->
+            <nav>
+            <a href="#"><img src="images/bottom_banner_01.gif" alt="하단배너1"></a>
+            <a href="#"><img src="images/bottom_banner_02.gif" alt="하단배너2"></a>
+            <a href="#"><img src="images/bottom_banner_03.gif" alt="하단배너3"></a>
+            <a href="#"><img src="images/bottom_banner_04.gif" alt="하단배너4"></a>
+            <a href="#"><img src="images/bottom_banner_05.gif" alt="하단배너5"></a>
+            <a href="#"><img src="images/bottom_banner_06.gif" alt="하단배너6"></a>
+            </nav>
+		<div>
+            <a href="#"><img src="images/b_logo.gif" alt="하단로고"></a>
+                <ul>
+                    <li>(주)매일건설정보 서울시 광진구 구의강변로 83 (구의동) 대표 박정아</li>
+                    <li>Tel☎ : 02-523-4245 Fax : 02-586-4245 E-mail : maeilmna@naver.com</li>
+                    <li>Copyright&copy;Maeil Construction Infomation Co., Ltd. All right reserved.</li>
+                </ul>
+		</div>
+	    </footer> <!-- 푸터 끝 -->
+        <div id="online"> <!-- 온라인 상단 문의 폼 -->
+            <h2>온라인 상담 문의
+            <button class="material-symbols-outlined">close</button>
+            </h2>
+                <hr>
+                <table>
+                <tr>
+                    <th>상담구분</th>
+                    <td colspan="3" id="sang">
+                        <input type="radio" id="건설업등록" name="type" value="1"><label for="건설업등록">건설업등록</label>
+                        <input type="radio" id="건설업양도" name="type" value="2"><label for="건설업양도">건설업양도</label>
+                        <input type="radio" id="건설업양수" name="type" value="3"><label for="건설업양수">건설업양수</label>
+                        <input type="radio" id="기업진단" name="type" value="4"><label for="기업진단">기업진단</label>
+                        <input type="radio" id="법인설립" name="type" value="5"><label for="법인설립">법인설립</label>
+                        <input type="radio" id="경영컨설팅" name="type" value="6"><label for="경영컨설팅">경영컨설팅</label>
+                        <input type="radio" id="기타" name="type" value="7"><label for="기타">기타</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>상담업종</th>
+                    <td>
+                        <select>
+                            <option value="job">업종을 선택하세요</option>
+                            <option value="job1">토건</option>
+                            <option value="job2">토목</option>
+                            <option value="job3">건축</option>
+                            <option value="job4">산업설비</option>
+                            <option value="job5">조경</option>
+                            <option value="job6">실내건축</option>
+                        </select>
+                    </td>
+                    <th>비밀번호</th>
+                    <td><input type="password" placeholder="비밀번호를 입력하세요"></td>
+                </tr>
+                <tr>
+                    <th>신청자명</th>
+                    <td><input type="text" placeholder="신청자 성함"></td>
+                    <th>업체명</th>
+                    <td><input type="text" placeholder="업체명을 입력하세요"></td>
+                </tr>
+                <tr>
+                    <th>TEL</th>
+                    <td><input type="tel" placeholder="숫자만 입력하세요"></td>
+                    <th>E-mail</th>
+                    <td><input type="email" placeholder="이메일 주소를 입력하세요"></td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td colspan="3"><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>내용</th>
+                    <td colspan="3"><textarea name="content" id="table" cols="80" rows="12"></textarea></td>
+                </tr>
+                <tr>
+                    <th>파일첨부</th>
+                    <td colspan="3"><input type="file"></td>
+                </tr>
+            </table>
+            <button type="submit" id="submit">제출</button>
+        </div> <!-- 온라인 상담 문의 폼 끝 -->
+    </div>
+</body>
+</html>

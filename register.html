@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공사업등록</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" title="파비콘">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Orbit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        object{
+            margin: 0 auto;
+            width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <object data="header.html"></object>
+        <div id="fixed">
+            <h2>고객센터<br>Customer Center</h2>
+            <p>TEL. 02-523-4245</p>
+            <p>FAX. 02-586-4245</p>
+            <hr>
+            <div>
+                <a href="#"><img src="images/letter.png" alt="mail"><p>온라인 상담</p></a>
+            </div>
+        </div>
+        <div id="gongsa">
+            <h2>일반공사업 등록</h2>
+            <hr>
+            <input type="radio" id="토목" name="type" value="1"><label for="토목">토목</label>
+            <input type="radio" id="건축" name="type" value="2"><label for="건축">건축</label>
+            <input type="radio" id="토건" name="type" value="3"><label for="토건">토건</label>
+            <input type="radio" id="산업설비" name="type" value="4"><label for="산업설비">산업설비</label>
+            <input type="radio" id="조경" name="type" value="5"><label for="조경">조경</label>
+            
+            <hr>
+            <div><h2>토목공사업</h2>
+            <p>종합적인 계획ㆍ관리 및 조정에 따라 토목공작물을 설치하거나 토지를 조성ㆍ개량하는 공사
+                도로·항만ㆍ교량ㆍ철도ㆍ지하철ㆍ공항ㆍ관개수로ㆍ발전(전기제외)ㆍ댐ㆍ하천 등의 건설, 택지조성 등 부지조성공사, 간척ㆍ매립공사 등</p></div>
+            <div><h2>처리기관</h2>
+            <p>건설산업기본법시행령 제87조제1항제1호 각목에 따른 업무를 위탁받은 기관(이하 “대한건설협 회”라 하며 그 시.도회를 포함한다)의 접수 및 심사를 거쳐 시 도지사가 처리한다.</p></div>
+            <div><h2>구비서류 작성요령 및 편철순서</h2>
+            <p>(1)건설업등록신청서【별지1호서식】
+                (2)법인등기부등본
+                (3)임원명단【별지2호서식】
+                (4)건설기술자 보유현황표【별지3호서식】
+                (5)사무실 확보 입증서류
+                (6)법인인 경우 대차대조표, 손익계산서, 개인인 경우에는 영업용자산액 명세서와 그 증빙 서류
+                (7)건설업 영위기간 입증 서류【별지 제4호서식】
+                (8)보증가능금액확인서【건설공제조합 발행】
+                (9)기타서류</div>
+            </div>
+        <footer> <!-- 푸터 -->
+            <nav>
+            <a href="#"><img src="images/bottom_banner_01.gif" alt="하단배너1"></a>
+            <a href="#"><img src="images/bottom_banner_02.gif" alt="하단배너2"></a>
+            <a href="#"><img src="images/bottom_banner_03.gif" alt="하단배너3"></a>
+            <a href="#"><img src="images/bottom_banner_04.gif" alt="하단배너4"></a>
+            <a href="#"><img src="images/bottom_banner_05.gif" alt="하단배너5"></a>
+            <a href="#"><img src="images/bottom_banner_06.gif" alt="하단배너6"></a>
+            </nav>
+		<div>
+            <a href="#"><img src="images/b_logo.gif" alt="하단로고"></a>
+                <ul>
+                    <li>(주)매일건설정보 서울시 광진구 구의강변로 83 (구의동) 대표 박정아</li>
+                    <li>Tel☎ : 02-523-4245 Fax : 02-586-4245 E-mail : maeilmna@naver.com</li>
+                    <li>Copyright&copy;Maeil Construction Infomation Co., Ltd. All right reserved.</li>
+                </ul>
+		</div>
+	    </footer> <!-- 푸터 끝 -->
+        <div id="online"> <!-- 온라인 상단 문의 폼 -->
+            <h2>온라인 상담 문의
+            <button class="material-symbols-outlined">close</button>
+            </h2>
+                <hr>
+                <table>
+                <tr>
+                    <th>상담구분</th>
+                    <td colspan="3" id="sang">
+                        <input type="radio" id="건설업등록" name="type" value="1"><label for="건설업등록">건설업등록</label>
+                        <input type="radio" id="건설업양도" name="type" value="2"><label for="건설업양도">건설업양도</label>
+                        <input type="radio" id="건설업양수" name="type" value="3"><label for="건설업양수">건설업양수</label>
+                        <input type="radio" id="기업진단" name="type" value="4"><label for="기업진단">기업진단</label>
+                        <input type="radio" id="법인설립" name="type" value="5"><label for="법인설립">법인설립</label>
+                        <input type="radio" id="경영컨설팅" name="type" value="6"><label for="경영컨설팅">경영컨설팅</label>
+                        <input type="radio" id="기타" name="type" value="7"><label for="기타">기타</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>상담업종</th>
+                    <td>
+                        <select>
+                            <option value="job">업종을 선택하세요</option>
+                            <option value="job1">토건</option>
+                            <option value="job2">토목</option>
+                            <option value="job3">건축</option>
+                            <option value="job4">산업설비</option>
+                            <option value="job5">조경</option>
+                            <option value="job6">실내건축</option>
+                        </select>
+                    </td>
+                    <th>비밀번호</th>
+                    <td><input type="password" placeholder="비밀번호를 입력하세요"></td>
+                </tr>
+                <tr>
+                    <th>신청자명</th>
+                    <td><input type="text" placeholder="신청자 성함"></td>
+                    <th>업체명</th>
+                    <td><input type="text" placeholder="업체명을 입력하세요"></td>
+                </tr>
+                <tr>
+                    <th>TEL</th>
+                    <td><input type="tel" placeholder="숫자만 입력하세요"></td>
+                    <th>E-mail</th>
+                    <td><input type="email" placeholder="이메일 주소를 입력하세요"></td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td colspan="3"><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>내용</th>
+                    <td colspan="3"><textarea name="content" id="table" cols="80" rows="12"></textarea></td>
+                </tr>
+                <tr>
+                    <th>파일첨부</th>
+                    <td colspan="3"><input type="file"></td>
+                </tr>
+            </table>
+            <button type="submit" id="submit">제출</button>
+        </div> <!-- 온라인 상담 문의 폼 끝 -->
+    </div> <!--레이아웃끝-->
+</body>
+</html>

@@ -1,0 +1,408 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    display: block;
+}
+body {
+    font-family: 'NanumSquareNeo-Variable';
+}
+#layout {
+    width: 1200px;
+    height: 2000px;
+}
+
+/* 상단 */
+
+object {
+    margin: auto;
+    height: 400px;
+}
+#hd {
+    overflow: hidden;
+}
+header {
+    display: flex;
+    margin-top: 20px;
+}
+header ul {
+    height: 50px;
+    flex: 1.5;
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+    text-align: center;
+    background: #7c1414;
+    align-items: center;
+}
+
+header li {
+    flex: 1;
+    position: relative;
+}
+header li:not(:first-child) {
+    border-left: 1px solid white;
+}
+header ul li>a {
+    font-family: 'TheJamsil5Bold';
+    color: white;
+    font-size: 1rem;
+}
+header ul li>a:hover {
+    color: black;
+}
+
+/* 하위 메뉴 */
+header nav {
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 34px;
+    width: 100%;
+    text-align: center;
+    display: none;
+    z-index: 1;
+}
+header nav a {
+    padding: 10px;
+    display: block;
+    font-size: 0.9rem;
+}
+header nav a:hover {
+    font-weight: bold;
+}
+
+/* 슬라이드 */
+#slide {
+    width: 1200px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+#slide div {
+    width:calc(1200px*5);
+    display: flex;
+    position: relative;
+    left:-4800px;
+}
+#slide img {
+    display: block; width: 1200px;
+}
+
+/* 건설 뉴스 */
+#consnews {
+    line-height: 180%;;
+    font-size: 1rem;
+}
+#consnews h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+#consnews div {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+}
+#consnews h5 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* 양도 양수 */
+#yang {
+    line-height: 180%;;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+#yang h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+#yang hr {
+    margin: 10px 0;
+}
+#yang input {
+    margin-left: 15px;
+    font-size: 0.7rem;
+    text-align: justify;
+}
+
+/* 법인설립 */
+#law {
+    line-height: 180%;;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+#law hr {
+    margin-bottom: 15px;
+}
+
+/* 일반 공사업 */
+#gongsa {
+    line-height: 180%;;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+#gongsa h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+#gongsa input {
+    margin-left: 15px;
+}
+#gongsa hr {
+    margin: 10px 0;
+}
+#gongsa {
+    display: block;
+}
+
+/* 기업 진단 */
+#com {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+#com h2 {
+    margin-bottom: 15px;
+}
+#com hr {
+    margin-bottom: 10px;
+}
+#com p {
+    margin-bottom: 20px;
+    line-height: 180%;
+}
+#som ol {
+    list-style-position: inside;
+    margin-left: 10px;
+}
+
+/* 기술 자격 */
+#seller {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+#seller h2 {
+    margin-bottom: 20px;
+}
+#seller p {
+    margin-bottom: 20px;
+}
+
+/* 사업등록 */
+#seller {
+    line-height: 180%;;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+#seller h2 {
+    font-size: 1.4rem;
+    margin: 15px 0;
+}
+
+/* 메인 (공지사항, 뉴스, 자료실) */
+main {
+    display: flex;
+    margin-top: 20px;
+}
+main section {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+main h3 {
+    font-weight: bold;
+    color: #7c1414;
+    margin-bottom: 10px;
+}
+main ul li {
+    list-style: none;
+    line-height: 180%;
+    font-size: 0.9rem;
+}
+main ul li:hover a {
+    color: brown;
+}
+main ul li span {
+    float: right;
+    font-size: 0.7rem;
+    color: #666;
+    margin-left: 10px;
+}
+
+
+/* 푸터 */
+footer {
+    width: 1200px;
+}
+footer nav {
+    display: flex;
+    margin: 20px 0;
+}
+footer div {
+    display: flex;
+    align-content: center;
+}
+
+footer ul {
+    list-style: none;
+}
+footer div img {
+    flex:1;
+    margin-top: 10px;
+    margin-right: 450px;
+}
+footer ul > li {
+    font-size:0.7rem;
+    color:#333;
+    display: block;
+    line-height: 180%;
+}
+
+
+
+/* 온라인 상담 문의 폼 */
+#online {
+    width: 750px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    top: 20vh;
+    left: 600px;
+    background: white;
+}
+#online hr {
+    margin: 10px 0 20px 0;
+}
+#online h2 {
+    display: flex;
+    align-items: center;
+}
+
+h2>button { /* 닫기 버튼 */
+    margin-left: 470px;
+    border: none;
+    background: none;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+button.material-symbols-outlined {
+    font-weight: bold;
+}
+
+table {
+    width: 680px;
+    margin-bottom: 10px;
+    /* line-height: 160%; */
+}
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#online td:not(#sang) input { /* 상담구분 제외 */
+    width: 100%;
+    height: 38px;
+}
+#sang input { /* 상담구분 */
+    margin-left: 5px;
+    display: inline;
+}
+#sang label {
+    font-size: 0.9rem;
+    margin-left: 4px;
+}
+select {
+    width: 100%;
+    height: 38px;
+}
+th {
+    padding: 10px;
+    letter-spacing: 2px;
+    background: #e8cc8b;
+}
+
+td textarea { /* 내용 */
+    display: block;
+    width: 100%;
+}
+input[type=file] { /* 파일 첨부 */
+    margin: 10px 0 0 10px;
+}
+#online>button { /* 제출 버튼 */
+   margin-left: 628px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   padding: 2px 5px;
+   cursor: pointer;
+}
+
+/* 옆면 고정 */
+#fixed {
+    width: 200px;
+    display:block;
+    position:absolute;
+    top: 20vh;
+    right:30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+}
+#fixed h2 {
+    font-size: 1.1rem;
+}
+#fixed p {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+#fixed hr {
+    margin: 10px 0; 
+}
+#fixed>div {
+    display: flex;
+}
+#fixed div img {
+    width: 40px;
+}
+#fixed div a:hover {
+    transform: scale(1.1);
+    color: brown;
+}
+#fixed>div p {
+    margin-left: -5px;
+    font-weight: bold;
+    font-size: 1rem;
+}

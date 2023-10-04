@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공사업관리</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" title="파비콘">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Orbit&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        object{
+            margin: 0 auto;
+            width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="layout">
+    <object data="header.html"></object>
+    <div id="fixed">
+        <h2>고객센터<br>Customer Center</h2>
+        <p>TEL. 02-523-4245</p>
+        <p>FAX. 02-586-4245</p>
+        <hr>
+        <div>
+            <a href="#"><img src="images/letter.png" alt="mail"><p>온라인 상담</p></a>
+        </div>
+    </div>
+    <div id="seller">
+        <h2>사업자 등록</h2>
+        <hr>
+        <div><h2>사업자등록 방법</h2>
+        <p>(1) 모든 사업자는 사업을 시작할 때 반드시 사업자등록을 하여야 한다.
+            - 사업자등록은 각각의 사업장마다 하여야 하며 사업개시일로 20일 안에 구비서류를 갖 추어 관할세무서에 등록한다.
+            - 신청내용에 따라 즉시 발급하거나 부가가치세과에 인계하여 신청사항을 확인한 후 사 업자등록증을 사업자에게 우송 또는
+            . .직접 교부
+        <br>
+        (2) 사업을 시작하기 전에 등록 - 사업 시작 전 세금계산서를 교부 받고자 할 경우 사업을 개시할 것이 객관적으로 확인 되면
+        . .. 사업자등록증이 교부된다.
+        <br>
+        (3) 여러 가지 사업의 겸업 -부가가치세 과세사업과 면세사업을 겸업할 때에는 부가가치세법에 의한 사업자 등록만 을 하면 된다.
+        - 부가가치세가 면세되는 사업만 하는 경우에는 소득세법(법인의 경우에는 법인세법)에 의 한 사업자등록을 한다.</p></div>
+        <h2>사업자등록신청 서류</h2>
+        <div><h5>개인사업자</h5>
+        <p>1. 사업자등록신청서 1부<br>
+            2. 임대차계약서 사본<br>
+        3. 허가(등록, 신고)증 사본<br>
+        4. 동업계약서 (공동사업자인 경우)<br>
+        5. 재외국민·외국인 입증서류<br>
+        - 여권 사본 또는 외국인등록증 사본<br>
+        - 국내에 통상적으로 주재하지 않는 경우 : 납세관리인 설정 신고서</p></div>
+    </div>
+    <footer> <!-- 푸터 -->
+        <nav>
+        <a href="#"><img src="images/bottom_banner_01.gif" alt="하단배너1"></a>
+        <a href="#"><img src="images/bottom_banner_02.gif" alt="하단배너2"></a>
+        <a href="#"><img src="images/bottom_banner_03.gif" alt="하단배너3"></a>
+        <a href="#"><img src="images/bottom_banner_04.gif" alt="하단배너4"></a>
+        <a href="#"><img src="images/bottom_banner_05.gif" alt="하단배너5"></a>
+        <a href="#"><img src="images/bottom_banner_06.gif" alt="하단배너6"></a>
+        </nav>
+    <div>
+        <a href="#"><img src="images/b_logo.gif" alt="하단로고"></a>
+            <ul>
+                <li>(주)매일건설정보 서울시 광진구 구의강변로 83 (구의동) 대표 박정아</li>
+                <li>Tel☎ : 02-523-4245 Fax : 02-586-4245 E-mail : maeilmna@naver.com</li>
+                <li>Copyright&copy;Maeil Construction Infomation Co., Ltd. All right reserved.</li>
+            </ul>
+    </div>
+    </footer> <!-- 푸터 끝 -->
+    <div id="online"> <!-- 온라인 상단 문의 폼 -->
+        <h2>온라인 상담 문의
+        <button class="material-symbols-outlined">close</button>
+        </h2>
+            <hr>
+            <table>
+            <tr>
+                <th>상담구분</th>
+                <td colspan="3" id="sang">
+                    <input type="radio" id="건설업등록" name="type" value="1"><label for="건설업등록">건설업등록</label>
+                    <input type="radio" id="건설업양도" name="type" value="2"><label for="건설업양도">건설업양도</label>
+                    <input type="radio" id="건설업양수" name="type" value="3"><label for="건설업양수">건설업양수</label>
+                    <input type="radio" id="기업진단" name="type" value="4"><label for="기업진단">기업진단</label>
+                    <input type="radio" id="법인설립" name="type" value="5"><label for="법인설립">법인설립</label>
+                    <input type="radio" id="경영컨설팅" name="type" value="6"><label for="경영컨설팅">경영컨설팅</label>
+                    <input type="radio" id="기타" name="type" value="7"><label for="기타">기타</label>
+                </td>
+            </tr>
+            <tr>
+                <th>상담업종</th>
+                <td>
+                    <select>
+                        <option value="job">업종을 선택하세요</option>
+                        <option value="job1">토건</option>
+                        <option value="job2">토목</option>
+                        <option value="job3">건축</option>
+                        <option value="job4">산업설비</option>
+                        <option value="job5">조경</option>
+                        <option value="job6">실내건축</option>
+                    </select>
+                </td>
+                <th>비밀번호</th>
+                <td><input type="password" placeholder="비밀번호를 입력하세요"></td>
+            </tr>
+            <tr>
+                <th>신청자명</th>
+                <td><input type="text" placeholder="신청자 성함"></td>
+                <th>업체명</th>
+                <td><input type="text" placeholder="업체명을 입력하세요"></td>
+            </tr>
+            <tr>
+                <th>TEL</th>
+                <td><input type="tel" placeholder="숫자만 입력하세요"></td>
+                <th>E-mail</th>
+                <td><input type="email" placeholder="이메일 주소를 입력하세요"></td>
+            </tr>
+            <tr>
+                <th>제목</th>
+                <td colspan="3"><input type="text"></td>
+            </tr>
+            <tr>
+                <th>내용</th>
+                <td colspan="3"><textarea name="content" id="table" cols="80" rows="12"></textarea></td>
+            </tr>
+            <tr>
+                <th>파일첨부</th>
+                <td colspan="3"><input type="file"></td>
+            </tr>
+        </table>
+        <button type="submit" id="submit">제출</button>
+    </div> <!-- 온라인 상담 문의 폼 끝 -->
+    </div>
+</body>
+</html>
